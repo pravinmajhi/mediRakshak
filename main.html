@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Medi Rakshak is a platform dedicated to improving medication safety and pharmacy management through technology.">
+    <meta name="keywords" content="healthcare, medication safety, pharmacy, digital health, medication errors, Medi Rakshak">
+    <meta name="author" content="Medi Rakshak">
+    <title>Medi Rakshak - Medication Safety & Pharmacy Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <style>
+        /* Dark mode styles */
+        .dark {
+            background-color: #121212;
+            color: white;
+        }
+
+        .dark .bg-gray-100 {
+            background-color: #2c2c2c;
+        }
+
+        .dark .bg-gray-900 {
+            background-color: #1c1c1c;
+        }
+
+        .dark .text-gray-700 {
+            color: #d1d1d1;
+        }
+
+        .dark .text-gray-400 {
+            color: #aaa;
+        }
+
+        .dark .text-blue-500 {
+            color: #bb86fc;
+        }
+
+        .dark .hover\:text-blue-500:hover {
+            color: #bb86fc;
+        }
+
+        .dark .bg-blue-500 {
+            background-color: #6200ea;
+        }
+
+        .dark .bg-blue-600 {
+            background-color: #3700b3;
+        }
+
+        .dark .bg-white {
+            background-color: #333;
+        }
+
+        .dark .text-white {
+            color: #121212;
+        }
+
+        .dark .bg-gray-200 {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 font-sans" id="theme-body">
+
+    <!-- Dark Mode Toggle Button -->
+    <button id="dark-mode-toggle" class="fixed top-5 right-5 bg-gray-900 text-white p-3 rounded-full z-50">
+        🌙
+    </button>
+
+    <!-- Header Section (Navigation) -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+            <a href="index.html" class="text-xl font-bold text-blue-500">MediRakshak</a>
+            <ul class="flex space-x-6 text-gray-600">
+                <li><a href="#features" class="hover:text-blue-500">Features</a></li>
+                <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="parallax bg-blue-500 text-white py-32" style="background-image: url('images/Blue\ Professional\ Healthcare\ Services\ YouTube\ Banner.png');">
+        <div class="container mx-auto text-center">
+            <h1 class="text-6xl font-extrabold mb-4 animate-fade">MediRakshak</h1>
+            <p class="text-2xl mb-8 animate-slide-up">Revolutionizing medication safety and pharmacy management.</p>
+            <a href="#features"
+                class="bg-white text-blue-500 px-8 py-3 rounded-full font-bold animate-bounce hover:bg-gray-200 sm:px-6 sm:py-2">Explore
+                Features</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold mb-6">About MediRakshak</h2>
+            <p class="text-gray-700 leading-relaxed max-w-2xl mx-auto">MediRakshak is dedicated to eliminating medication errors caused by illegible handwriting or carelessness. By integrating with India's Digital Health Mission, we ensure safe and efficient pharmacy management through advanced technologies.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-extrabold text-center mb-12">Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-900 text-white p-6 rounded-lg hover:shadow-lg transition transform hover:-translate-y-1">
+                    <img src="images/claudio-schwarz-wMgW6bjjzZU-unsplash.jpg" alt="Prescription Scanning" class="mb-4 mx-auto">
+                    <h3 class="text-2xl font-bold mb-4">Prescription Scanning</h3>
+                    <p>Streamline record-keeping and compliance by capturing prescription images.</p>
+                </div>
+                <div class="bg-gray-900 text-white p-6 rounded-lg hover:shadow-lg transition transform hover:-translate-y-1">
+                    <img src="images/Black Simple Image Gallery Logo.png" alt="Age-Based Dosage Verification" class="mb-4 mx-auto">
+                    <h3 class="text-2xl font-bold mb-4">Age-Based Dosage Verification</h3>
+                    <p>Ensure dosages are suitable for patients based on their age.</p>
+                </div>
+                <div class="bg-gray-900 text-white p-6 rounded-lg hover:shadow-lg transition transform hover:-translate-y-1">
+                    <img src="images/Black Simple Image Gallery Logo (1).png" alt="Warning System" class="mb-4 mx-auto">
+                    <h3 class="text-2xl font-bold mb-4">Warning System</h3>
+                    <p>Alerts for unsafe or incompatible prescriptions.</p>
+                </div>
+                <div class="bg-gray-900 text-white p-6 rounded-lg hover:shadow-lg transition transform hover:-translate-y-1">
+                    <img src="images/Black Simple Image Gallery Logo (2).png" alt="Chemist’s Manager" class="mb-4 mx-auto">
+                    <h3 class="text-2xl font-bold mb-4">Chemist’s Manager</h3>
+                    <p>Organize invoices and manage Schedule H drugs effortlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-20 bg-blue-500 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold mb-12">How It Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="p-6">
+                    <div class="step bg-white text-blue-500 p-6 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center font-extrabold text-2xl">
+                        1</div>
+                    <p class="text-lg">Get a prescription from a licensed physician.</p>
+                </div>
+                <div class="p-6">
+                    <div class="step bg-white text-blue-500 p-6 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center font-extrabold text-2xl">
+                        2</div>
+                    <p class="text-lg">Scan or input details in the Medi Rakshak app.</p>
+                </div>
+                <div class="p-6">
+                    <div class="step bg-white text-blue-500 p-6 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center font-extrabold text-2xl">
+                        3</div>
+                    <p class="text-lg">Receive a safe, verified invoice for the medication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold mb-8">Contact Us</h2>
+            <p class="text-gray-700 mb-8">For inquiries, collaborations, or feedback, reach out to us below.</p>
+            <form class="max-w-lg mx-auto space-y-4">
+                <input type="text" placeholder="Your Name" class="w-full p-4 border rounded-lg" required minlength="3">
+                <input type="email" placeholder="Your Email" class="w-full p-4 border rounded-lg" required>
+                <textarea placeholder="Your Message" class="w-full p-4 border rounded-lg" rows="4" required></textarea>
+                <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-6 bg-gray-900 text-gray-400 text-center">
+        <div class="container mx-auto">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#features" class="text-gray-400 hover:text-white">Features</a>
+                <a href="#about" class="text-gray-400 hover:text-white">About Us</a>
+                <a href="#contact" class="text-gray-400 hover:text-white">Contact</a>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <a href="#" aria-label="Facebook" class="text-gray-400 hover:text-white">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.499v-9.293H9.847v-3.622h2.978v-2.676c0-2.949 1.799-4.556 4.427-4.556 1.258 0 2.338.093 2.653.135v3.078h-1.821c-1.428 0-1.705.679-1.705 1.675v2.21h3.436l-.449 3.622h-2.987V24h5.869c.732 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="mt-6">&copy; 2024 Medi Rakshak. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dark Mode Toggle Logic
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const body = document.getElementById('theme-body');
+
+        // Check for saved theme preference in localStorage
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark');
+        }
+
+        // Toggle theme when button is clicked
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark');
+            if (body.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // GSAP ScrollTrigger Animations
+        gsap.from(".step", { opacity: 0, y: 50, stagger: 0.3, duration: 1, scrollTrigger: ".step" });
+        gsap.from(".animate-fade", { opacity: 0, duration: 1, scrollTrigger: ".animate-fade" });
+        gsap.from(".animate-slide-up", { y: 100, opacity: 0, duration: 1, scrollTrigger: ".animate-slide-up" });
+        gsap.to(".animate-bounce", { scale: 1.1, duration: 0.3, repeat: -1, yoyo: true });
+
+        // Show scroll-to-top button on scroll
+        window.addEventListener('scroll', () => {
+            const scrollButton = document.getElementById('scroll-to-top');
+            if (window.scrollY > 500) {
+                scrollButton.style.display = 'block';
+            } else {
+                scrollButton.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
